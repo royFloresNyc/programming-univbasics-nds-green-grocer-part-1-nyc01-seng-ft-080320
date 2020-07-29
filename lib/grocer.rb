@@ -1,5 +1,5 @@
 def find_item_by_name_in_collection(name, collection)
-  return collection.each { |product| 
+  collection.each { |product| 
     if product[:item] == name
       product
     end 
