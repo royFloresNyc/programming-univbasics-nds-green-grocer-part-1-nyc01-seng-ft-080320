@@ -1,6 +1,10 @@
 def find_item_by_name_in_collection(name, collection)
   collection.each { |product| 
-    product[:item] == name ? product : nil
+    if product[:item] == name
+      product
+    else
+      nil 
+    end
   }
 end
 
