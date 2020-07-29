@@ -14,8 +14,9 @@ def consolidate_cart(cart)
   cart.each do |product|
     if find_item_by_name_in_collection(product[:item], consolidated_cart)
       product = find_item_by_name_in_collection(product[:item], consolidated_cart)
+      index = consolidated_cart.index(product)
       binding.pry 
-      consolidated_cart[product][:count]
+      consolidated_cart[index][:count] += 1 
     else
       product[:count] = 1 
       consolidated_cart << product
