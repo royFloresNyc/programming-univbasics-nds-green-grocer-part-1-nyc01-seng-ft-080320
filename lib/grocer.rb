@@ -23,5 +23,6 @@ def consolidate_cart(cart)
   consolidated_cart
 end
 
+binding.pry 
 
   
