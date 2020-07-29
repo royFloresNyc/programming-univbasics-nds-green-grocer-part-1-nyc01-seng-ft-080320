@@ -2,7 +2,9 @@ def find_item_by_name_in_collection(name, collection)
   collection.each { |product| 
     if product[:item] == name
       return product
-    end
+    else
+      return nil 
+    end 
   }
 end
 
