@@ -1,9 +1,6 @@
 def find_item_by_name_in_collection(name, collection)
-  collection.each { |product| product[:item] == name ? return product
-      return product
-    end 
-  }
-  nil 
+  collection.each { |product| product[:item] == name ? return product : return nil }
+
 end
 
 def consolidate_cart(cart)
