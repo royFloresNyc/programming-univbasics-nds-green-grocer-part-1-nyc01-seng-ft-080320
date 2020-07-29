@@ -15,6 +15,7 @@ def consolidate_cart(cart)
     else
       product[:count] = 1 
       consolidated_cart << product
+    end 
   end 
   consolidated_cart
 end
